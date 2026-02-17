@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34631575547",
+    "project_id": "shrava-29832",
+    "storage_bucket": "shrava-29832.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34631575547:android:373594b3ea923298a58d5e",
+        "android_client_info": {
+          "package_name": "com.Shrava.Shrava"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmDXTTHjz1Xe_hrR61qx00YIR-1dKw9mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
