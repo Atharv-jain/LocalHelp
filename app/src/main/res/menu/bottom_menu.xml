@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homeone"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bookings"
+        android:icon="@drawable/booking"
+        android:title="Bookings"/>
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chatone"
+        android:title="Chat"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/circleimage"
+        android:title="Profile"/>
+
+</menu>

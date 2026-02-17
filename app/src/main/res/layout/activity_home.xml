@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.Home">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bg">
@@ -19,38 +19,121 @@
         android:layout_height="wrap_content">
 
         <!-- Header -->
-        <TextView
-            android:text="Hello, John"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/textDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <!-- Search Bar -->
-        <EditText
-            android:hint="Search for services"
-            android:background="@drawable/bg_card"
-            android:padding="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <!-- Banner -->
-        <LinearLayout
-            android:background="@drawable/bg_card"
-            android:layout_marginTop="16dp"
-            android:padding="16dp"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:text="Need Help at Home?"
-                android:textSize="18sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Hello, John 👋"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:text="New York City, NY"
+                    android:textColor="#777"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/notification"
+                android:layout_alignParentEnd="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+
+        <!-- Search Bar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Search for services..."
+                android:paddingStart="20dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Banner -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Banner Image -->
+
+                <!-- Overlay Content -->
+
+                <ImageView
+                    android:id="@+id/bannerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bannerworker" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Need Help at Home?"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Book Trusted Local Professionals"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Book Now"
+                        android:textColor="#FF9800" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
 
         <!-- Popular Services -->
         <TextView
@@ -78,7 +161,7 @@
                 <ImageView
                     android:background="@drawable/bg_circle"
                     android:padding="14dp"
-                    android:src="@drawable/ic_plumber"
+                    android:src="@drawable/plumber"
                     android:layout_width="60dp"
                     android:layout_height="60dp"/>
 
@@ -99,7 +182,7 @@
                 <ImageView
                     android:background="@drawable/bg_circle"
                     android:padding="14dp"
-                    android:src="@drawable/ic_electrician"
+                    android:src="@drawable/electricity"
                     android:layout_width="60dp"
                     android:layout_height="60dp"/>
 
@@ -110,10 +193,51 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/bg_circle"
+                    android:padding="14dp"
+                    android:src="@drawable/carpenter"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Carpenter"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/bg_circle"
+                    android:padding="14dp"
+                    android:src="@drawable/cleaning"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Cleaning"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
 
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
