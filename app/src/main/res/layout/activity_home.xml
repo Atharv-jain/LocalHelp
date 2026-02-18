@@ -10,234 +10,341 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bg">
+        android:background="@color/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="58dp">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <!-- Header -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_alignParentStart="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:text="Hello, John 👋"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:textColor="#222"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-
-                <TextView
-                    android:text="New York City, NY"
-                    android:textColor="#777"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <ImageView
-                android:src="@drawable/notification"
-                android:layout_alignParentEnd="true"
-                android:layout_width="40dp"
-                android:layout_height="40dp"/>
-        </RelativeLayout>
-
-        <!-- Search Bar -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="6dp">
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:hint="Search for services..."
-                android:paddingStart="20dp" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Banner -->
-        <com.google.android.material.card.MaterialCardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="6dp">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <FrameLayout
+            <!-- Header -->
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <!-- Banner Image -->
-
-                <!-- Overlay Content -->
-
-                <ImageView
-                    android:id="@+id/bannerImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/bannerworker" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start|center"
-                    android:orientation="vertical"
-                    android:paddingStart="20dp"
-                    android:paddingTop="24dp">
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Need Help at Home?"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18sp"
+                        android:text="Hello, John 👋"
+                        android:textColor="#222"
+                        android:textSize="22sp"
                         android:textStyle="bold" />
 
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="Book Trusted Local Professionals"
-                        android:textColor="#FFFFFF"
+                        android:text="New York City, NY"
+                        android:textColor="#777"
                         android:textSize="14sp" />
-
-                    <Button
-                        android:layout_width="120dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="12dp"
-                        android:backgroundTint="#FFFFFF"
-                        android:text="Book Now"
-                        android:textColor="#FF9800" />
                 </LinearLayout>
 
-            </FrameLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-
-
-
-
-
-        <!-- Popular Services -->
-        <TextView
-            android:text="Popular Services"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginTop="18dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- Item -->
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/circleimage" />
 
                 <ImageView
-                    android:background="@drawable/bg_circle"
-                    android:padding="14dp"
-                    android:src="@drawable/plumber"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_constraintTap=""
+                    android:layout_marginEnd="1dp"
+                    android:layout_toStartOf="@+id/imageView3"
+                    android:src="@drawable/notification" />
 
-                <TextView
-                    android:text="Plumber"
-                    android:layout_marginTop="6dp"
+            </RelativeLayout>
+
+            <!-- Search Bar -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <EditText
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:hint="Search for services..."
+                    android:paddingStart="15dp"
+                    android:textSize="@dimen/_14sdp"/>
+            </com.google.android.material.card.MaterialCardView>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:background="@drawable/bg_circle"
-                    android:padding="14dp"
-                    android:src="@drawable/electricity"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"/>
 
-                <TextView
-                    android:text="Electrician"
-                    android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+            <!-- Banner -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <ImageView
-                    android:background="@drawable/bg_circle"
-                    android:padding="14dp"
-                    android:src="@drawable/carpenter"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    <!-- Banner Image -->
 
-                <TextView
-                    android:text="Carpenter"
-                    android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+                    <!-- Overlay Content -->
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/bannerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bannerworker" />
 
-                <ImageView
-                    android:background="@drawable/bg_circle"
-                    android:padding="14dp"
-                    android:src="@drawable/cleaning"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="24dp">
 
-                <TextView
-                    android:text="Cleaning"
-                    android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Need Help at Home?"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Book Trusted Local Professionals"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="12dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="Book Now"
+                            android:textColor="#FF9800" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- Popular Services -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Popular Services"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- Item -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/plumber" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Plumber" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="62dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/electricity" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Electrician" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/carpenter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Carpenter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/cleaning" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Cleaning" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/plumber" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Plumber" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/acrepair" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Ac Repair" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/appliance" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Appliances" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_circle"
+                            android:padding="14dp"
+                            android:src="@drawable/more" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="More" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
         </LinearLayout>
-
-    </LinearLayout>
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
