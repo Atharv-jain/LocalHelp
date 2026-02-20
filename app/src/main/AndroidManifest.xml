@@ -12,6 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shrava">
         <activity
+            android:name=".ui.Provider_details"
+            android:exported="false"
+            android:label="@string/title_activity_provider_details"
+            android:theme="@style/Theme.Shrava.NoActionBar" />
+        <activity
+            android:name=".ui.All_providers"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Bookings"
+            android:exported="false"
+            android:label="@string/title_activity_bookings"
+            android:theme="@style/Theme.Shrava.NoActionBar" />
+        <activity
             android:name=".ui.Home"
             android:exported="false" />
         <activity

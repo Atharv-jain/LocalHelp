@@ -8,4 +8,6 @@
     <color name="bg">#F5F7FB</color>
     <color name="textDark">#333333</color>
     <color name="textLight">#777777</color>
+    <color name="bg_tint">#FFC107</color>
+
 </resources>
