@@ -69,6 +69,7 @@
 
                 <!-- Full Name -->
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rgUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Full Name"
@@ -106,6 +107,7 @@
 
                 <!-- Email -->
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rgEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -125,6 +127,7 @@
 
                 <!-- Password -->
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rgPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -145,6 +148,7 @@
 
                 <!-- Confirm Password -->
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rgRePassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -165,6 +169,7 @@
 
                 <!-- Create Account Button -->
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginButton"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="24dp"
@@ -176,6 +181,7 @@
 
                 <!-- Login Text -->
                 <TextView
+                    android:id="@+id/loginButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Already have an account? Login"

@@ -51,6 +51,7 @@
 
             <!-- Email / Mobile -->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextLogEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mobile number / Email"
@@ -70,6 +71,7 @@
 
             <!-- Password -->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextLogPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -101,7 +103,7 @@
 
             <!-- Login Button -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLogin"
+                android:id="@+id/LogButton"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="20dp"
@@ -114,6 +116,7 @@
 
             <!-- Create Account -->
             <TextView
+                android:id="@+id/SignupButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
